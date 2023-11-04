@@ -12,7 +12,7 @@ st.markdown("Inserisci i dati nei campi sottostanti")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 # Fetch existing vendors data
-existing_data = conn.read(worksheet="Entrate", usecols=list(range(13)))#, ttl=5)
+existing_data = conn.read(worksheet="Entrate", usecols=list(range(13)), ttl=5)
 existing_data = existing_data.dropna(how="all")
 
 #st.dataframe(existing_data)
