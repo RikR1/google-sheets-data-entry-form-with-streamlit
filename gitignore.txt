@@ -1,1 +1,1 @@
-secrets.toml
+.strealit/secrets.toml
