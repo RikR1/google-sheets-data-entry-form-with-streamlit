@@ -117,7 +117,7 @@ if action == "Inserisci un'entrata":
             Entrata = pd.DataFrame(
                 [
                     {
-                        "Data": data.strftime("%y-%m-%d"),
+                        "Data": data.strftime("%d-%m-%y"),
                         "Paga oraria": paga_oraria,
                         "Ore lavorative": ore_lavorative,
                         "Totale trattenute": totale_trattenute,
@@ -179,7 +179,7 @@ elif action == "Inserisci un'uscita":
             Uscita = pd.DataFrame( 
                 [
                     {
-                        "Data": data_uscite.strftime("%y-%m-%d"),
+                        "Data": data_uscite.strftime("%d-%m-%y"),
                         "Macro Categoria": macro_category,
                         "Categoria": category,
                         "Descrizione": descrizione,
